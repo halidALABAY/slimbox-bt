@@ -449,20 +449,20 @@ static void handle_buttons() {
     report.options = gpio_pin_get_dt(&buttons[1]);
     report.stadia = gpio_pin_get_dt(&buttons[2]);
     report.capture = gpio_pin_get_dt(&buttons[3]);
-    report.l3 = gpio_pin_get_dt(&buttons[4]);
-    report.r3 = gpio_pin_get_dt(&buttons[5]);
+    report.l3 = gpio_pin_get_dt(&buttons[5]);
+    report.r3 = gpio_pin_get_dt(&buttons[4]);
     report.x = gpio_pin_get_dt(&buttons[10]);
     report.y = gpio_pin_get_dt(&buttons[11]);
-    report.r1 = gpio_pin_get_dt(&buttons[12]);
-    report.l1 = gpio_pin_get_dt(&buttons[13]);
+    report.r1 = gpio_pin_get_dt(&buttons[13]);
+    report.l1 = gpio_pin_get_dt(&buttons[12]);
     report.a = gpio_pin_get_dt(&buttons[14]);
     report.b = gpio_pin_get_dt(&buttons[15]);
-    report.r2 = gpio_pin_get_dt(&buttons[16]);
+    report.r2 = gpio_pin_get_dt(&buttons[17]);
     report.r2_axis = report.r2 * 255;
-    report.l2 = gpio_pin_get_dt(&buttons[17]);
+    report.l2 = gpio_pin_get_dt(&buttons[16]);
     report.l2_axis = report.l2 * 255;
 
-    int dpad = gpio_pin_get_dt(&buttons[6]) | (gpio_pin_get_dt(&buttons[8]) << 1) | (gpio_pin_get_dt(&buttons[9]) << 2) | (gpio_pin_get_dt(&buttons[7]) << 3);
+    int dpad = gpio_pin_get_dt(&buttons[9]) | (gpio_pin_get_dt(&buttons[8]) << 1) | (gpio_pin_get_dt(&buttons[6]) << 2) | (gpio_pin_get_dt(&buttons[7]) << 3);
 
     report.dpad = dpad_lut[dpad];
 
