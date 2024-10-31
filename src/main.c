@@ -446,8 +446,8 @@ static void handle_buttons() {
 
     report.menu = gpio_pin_get_dt(&buttons[1]);
     report.options = gpio_pin_get_dt(&buttons[0]);
-    report.stadia = gpio_pin_get_dt(&buttons[2]);
-    report.capture = gpio_pin_get_dt(&buttons[3]);
+    report.stadia = gpio_pin_get_dt(&buttons[3]);
+    report.capture = gpio_pin_get_dt(&buttons[2]);
     report.l3 = gpio_pin_get_dt(&buttons[12]);
     report.r3 = gpio_pin_get_dt(&buttons[16]);
     report.x = gpio_pin_get_dt(&buttons[15]);
