@@ -462,7 +462,7 @@ static void handle_buttons() {
     report.l2 = gpio_pin_get_dt(&buttons[16]);
     report.l2_axis = report.l2 * 255;
 
-    int dpad = gpio_pin_get_dt(&buttons[6]) | (gpio_pin_get_dt(&buttons[7]) << 1) | (gpio_pin_get_dt(&buttons[9]) << 2) | (gpio_pin_get_dt(&buttons[8]) << 3);
+    int dpad = gpio_pin_get_dt(&buttons[6]) | (gpio_pin_get_dt(&buttons[8]) << 1) | (gpio_pin_get_dt(&buttons[7]) << 2) | (gpio_pin_get_dt(&buttons[9]) << 3);
     
 
     report.dpad = dpad_lut[dpad];
