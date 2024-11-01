@@ -450,12 +450,12 @@ static void handle_buttons() {
     report.capture = gpio_pin_get_dt(&buttons[2]);
     report.l3 = gpio_pin_get_dt(&buttons[12]);
     report.r3 = gpio_pin_get_dt(&buttons[16]);
-    report.x = gpio_pin_get_dt(&buttons[11]);
-    report.y = gpio_pin_get_dt(&buttons[15]);
+    report.x = gpio_pin_get_dt(&buttons[10]);
+    report.y = gpio_pin_get_dt(&buttons[14]);
     report.r1 = gpio_pin_get_dt(&buttons[17]);
     report.l1 = gpio_pin_get_dt(&buttons[13]);
-    report.a = gpio_pin_get_dt(&buttons[14]);
-    report.b = gpio_pin_get_dt(&buttons[10]);
+    report.a = gpio_pin_get_dt(&buttons[15]);
+    report.b = gpio_pin_get_dt(&buttons[11]);
     report.r2 = gpio_pin_get_dt(&buttons[5]);
     report.r2_axis = report.r2 * 255;
     report.l2 = gpio_pin_get_dt(&buttons[3]);
