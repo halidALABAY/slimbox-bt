@@ -270,7 +270,7 @@ static struct bt_conn_auth_info_cb conn_auth_info_callbacks = {
     .pairing_complete = pairing_complete,
     .pairing_failed = pairing_failed
 };
-
+//selam
 static uint8_t const report_map[] = {
     0x05, 0x01,        // Usage Page (Generic Desktop Ctrls)
     0x09, 0x05,        // Usage (Game Pad)
